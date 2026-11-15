@@ -1,0 +1,86 @@
+{
+ "uidValidity": "777",
+ "messages": [
+  {
+   "uid": 101,
+   "messageId": "<m101@x>",
+   "from": "PlanHub <noreply@planhub.com>",
+   "subject": "New project: Abilene ISD Gym Renovation",
+   "date": "2026-11-14T10:00:00Z",
+   "text": "You're invited to bid.",
+   "listUnsubscribe": false
+  },
+  {
+   "uid": 102,
+   "messageId": "<m102@x>",
+   "from": "Old Navy <deals@oldnavy.com>",
+   "subject": "50% off everything!",
+   "date": "2026-11-14T11:00:00Z",
+   "text": "Sale ends tonight <!--extract {\"category\": \"promo\", \"summary\": \"Old Navy sale\"}-->",
+   "listUnsubscribe": false
+  },
+  {
+   "uid": 103,
+   "messageId": "<m103@x>",
+   "from": "Atmos Energy <billing@atmosenergy.com>",
+   "subject": "Your bill is past due",
+   "date": "2026-11-14T12:00:00Z",
+   "text": "Your balance of $142.17 was due Nov 10. Service may be disconnected after Nov 20. <!--extract {\"category\": \"bill\", \"urgency\": \"today\", \"summary\": \"Atmos Energy: $142.17 past due (was due Nov 10), shutoff possible after Nov 20\", \"amount\": 142.17, \"date\": \"2026-11-10\", \"party\": \"Atmos Energy\", \"email_says\": \"past_due\", \"autopay\": false, \"open_item_kind\": \"bill\"}-->",
+   "listUnsubscribe": false
+  },
+  {
+   "uid": 104,
+   "messageId": "<m104@x>",
+   "from": "Chase <no-reply@alertsp.chase.com>",
+   "subject": "Transaction declined",
+   "date": "2026-11-14T13:00:00Z",
+   "text": "A $64.03 purchase at H-E-B on card ending 4421 was declined. <!--extract {\"category\": \"payment_failed\", \"urgency\": \"today\", \"summary\": \"Chase card \\u20264421 declined at H-E-B for $64.03\", \"amount\": 64.03, \"party\": \"H-E-B\", \"email_says\": \"failed\", \"card_last4\": \"4421\"}-->",
+   "listUnsubscribe": false
+  },
+  {
+   "uid": 105,
+   "messageId": "<m105@x>",
+   "from": "MySchoolBucks <noreply@myschoolbucks.com>",
+   "subject": "Low balance alert for Karsyn",
+   "date": "2026-11-14T14:00:00Z",
+   "text": "Karsyn's balance is $2.15. <!--extract {\"category\": \"kids_school\", \"urgency\": \"today\", \"summary\": \"Karsyn's lunch balance is low: $2.15\", \"kid\": \"Karsyn\", \"kid_note_kind\": \"lunch\", \"lunch_balance\": 2.15}-->",
+   "listUnsubscribe": false
+  },
+  {
+   "uid": 106,
+   "messageId": "<m106@x>",
+   "from": "Jim Ned High <office@jimned.net>",
+   "subject": "Missing assignments - Ryan",
+   "date": "2026-11-14T15:00:00Z",
+   "text": "Ryan has 2 missing assignments in Algebra I. <!--extract {\"category\": \"kids_school\", \"urgency\": \"fyi\", \"summary\": \"Ryan: 2 missing assignments in Algebra I\", \"kid\": \"Ryan\", \"kid_note_kind\": \"missing_work\"}-->",
+   "listUnsubscribe": false
+  },
+  {
+   "uid": 107,
+   "messageId": "<m107@x>",
+   "from": "Sarah Lee <sarah@buildstaff.com>",
+   "subject": "Senior PM role - Dallas",
+   "date": "2026-11-14T16:00:00Z",
+   "text": "Hi Cody, I have a Senior PM role at Hensel Phelps, $135-150k, Dallas. <!--extract {\"category\": \"job\", \"urgency\": \"fyi\", \"summary\": \"Sarah Lee (BuildStaff): Senior PM at Hensel Phelps, Dallas, $135-150k\", \"recruiter_name\": \"Sarah Lee\", \"job_company\": \"Hensel Phelps\", \"job_role\": \"Senior Project Manager\", \"job_pay\": \"$135-150k\", \"job_location\": \"Dallas, TX\"}-->",
+   "listUnsubscribe": false
+  },
+  {
+   "uid": 108,
+   "messageId": "<m108@x>",
+   "from": "Amazon <shipment-tracking@amazon.com>",
+   "subject": "Arriving Tuesday",
+   "date": "2026-11-14T17:00:00Z",
+   "text": "Your package arrives Tue Nov 17. <!--extract {\"category\": \"delivery\", \"urgency\": \"upcoming\", \"summary\": \"Amazon package arriving Tue Nov 17\", \"date\": \"2026-11-17\", \"party\": \"Amazon\", \"open_item_kind\": \"package\"}-->",
+   "listUnsubscribe": false
+  },
+  {
+   "uid": 109,
+   "messageId": "<m109@x>",
+   "from": "Capital One <capitalone@notification.capitalone.com>",
+   "subject": "Settlement offer",
+   "date": "2026-11-14T18:00:00Z",
+   "text": "We can settle your balance for $850 if paid by Dec 1. <!--extract {\"category\": \"account_alert\", \"urgency\": \"upcoming\", \"summary\": \"Capital One settlement offer: $850 if paid by Dec 1\", \"amount\": 850, \"date\": \"2026-12-01\", \"party\": \"Capital One\", \"open_item_kind\": \"settlement\"}-->",
+   "listUnsubscribe": false
+  }
+ ]
+}
