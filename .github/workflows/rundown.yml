@@ -1,0 +1,38 @@
+name: Rundown
+
+# 6 AM, 11 AM and 3 PM Central. GitHub schedules are in UTC, so both the CST and CDT
+# times are listed; the job itself only runs when it is actually one of those hours in Chicago.
+on:
+  schedule:
+    - cron: "1 11,12,16,17,20,21 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: rundown
+  cancel-in-progress: false
+
+jobs:
+  rundown:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Read new mail and send the rundown
+        run: npm run rundown
+        env:
+          # A manual run from the Actions tab runs right away.
+          FORCE: ${{ github.event_name == 'workflow_dispatch' && '1' || '' }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          YAHOO_EMAIL: ${{ secrets.YAHOO_EMAIL }}
+          YAHOO_APP_PASSWORD: ${{ secrets.YAHOO_APP_PASSWORD }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          VAPID_PUBLIC_KEY: ${{ secrets.VAPID_PUBLIC_KEY }}
+          VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+          APP_URL: ${{ vars.APP_URL }}
